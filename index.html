@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+       	<script type="text/javascript" src="js/jquery.js"></script>
+        <title>Super-Heros</title>
+  </head>
+
+  <body>
+
+    <main>
+
+		<!--Réception résultats requetes-->
+      <div class="ecran">
+
+  			<div id="info">
+        </div>
+
+      </div>
+        <!--Image dossier-->
+    </main>
+
+
+    <footer>
+
+		<!--Titre de l'encadrement-->
+      <section class="terminal">
+
+        	<h1>
+
+        		<a href="index.html"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                <i class="fa fa-minus" id="accordeon" aria-hidden="true"></i>
+                <a title="Affiche les 10 derniers héros enregistrés"><i id="lien" class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                <span>agent@shield:</span> / ~ /secret/search/Heroes-Api
+
+        	</h1>
+
+		<!--Texte descriptif-->
+      	<div id="panel">
+
+         	<div id="presentation">
+
+                	<p>Bienvenue agent du shield, ce site permet l'accès à tous les héros inscrits dans la base de donnée.
+                		En choisissant l'univers entre marvel et dc comics, vous aurez accès à une liste
+                		contenant tout les héros de cet univers.
+                		Choisissez le héros qui vous intéresse le plus et sur l'écran s'affichera un descriptif succinct le concernant, allant
+                		de son véritable nom en passant par son pouvoir qui le caractérise jusqu'à même l'année de son apparition !
+                	</p>
+
+                	<p>Plusieurs onglets sont à votre disposition :</p>
+                		<ul>
+                		<li><i class="fa fa-times-circle blanc icone" aria-hidden="true"></i>: Rafraichissement de la page en cas d'un chargement trop long.</li>
+                		<li><i class="fa fa-minus blanc icone" aria-hidden="true"></i>: Rétrécissement ou agrandissement de la fenêtre.</li>
+                		<li><i class="fa fa-window-maximize blanc icone" aria-hidden="true"></i>: Affichage des dix derniers héros enregistrés des deux univers. </li>
+							</ul>
+
+
+         	</div>
+
+		<!--Chargement des requetes-->
+        	<div id="loading">
+        	</div>
+
+		<!--Formulaire de recherche-->
+			<div id="search">
+
+         	<label>/root/</label>
+          	<select id="editeur">
+          		<option value="">--</option>
+           		<option value="marvel">Marvel</option>
+            	<option value="dc">DC Comics</option>
+          	</select>
+
+          <label>/secret/search/Heroes-Api:</label>
+          <select id="combo">
+          </select>
+
+          <button id="action">clik</button>
+
+        </div>
+      </div>
+
+
+    </section>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+ </body>
+
+</html>
