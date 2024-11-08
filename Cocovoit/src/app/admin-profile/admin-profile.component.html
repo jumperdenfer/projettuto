@@ -1,0 +1,14 @@
+<div>
+<ul>
+  <li *ngFor="let user of users">{{ user.login }}</li>
+</ul>
+</div>
+
+<form *ngIf="!isLoggedIn" (ngSubmit)="deleteProfile()" #loginForm="ngForm">
+	
+<div class="form-group">
+		<label for="toDelete"> delete </label>
+		<input type="text" class="form-control" id="delete" required placeholder="delete" [(ngModel)]="delete" name="delete" />
+	</div>
+<button class="form-control" type="submit"> Delete User </button>
+</form>

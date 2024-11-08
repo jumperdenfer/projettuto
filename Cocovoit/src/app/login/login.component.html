@@ -1,0 +1,14 @@
+<form *ngIf="!isLoggedIn" (ngSubmit)="register()" #loginForm="ngForm">
+	<div>
+		<label for="login"> Login </label>
+		<input type="email" class="form-control" id="login" required placeholder="e-mail" [(ngModel)]="login" name="login" />
+	</div>
+	<div>
+		<label for="password"> Mot de passe </label>
+		<input type="password" class="form-control" id="password" required placeholder="mot de passe" [(ngModel)]="password" name="password" />
+	</div>
+	<button class="form-control" type="submit"> Submit </button>
+</form>
+<pre *ngIf="isLogged">
+	{{profile | json}}
+</pre>

@@ -1,0 +1,29 @@
+<form *ngIf="!isLoggedIn" (ngSubmit)="registerTrajet()" #loginForm="ngForm">
+	
+	<div class="form-group">
+		<label for="départ"> Départ </label>
+		<input type="text" class="form-control" id="depart" required placeholder="départ" [(ngModel)]="depart" name="départ" />
+	</div>
+	<div>
+		<label for="arrivée"> Arrivée </label>
+		<input type="text" class="form-control" id="arrivee" required placeholder="arrivée" [(ngModel)]="arrivee" name="arrivée" />
+	</div>
+	<div class="form-group">
+		<label for="distance"> Distance </label>
+		<input type="text" class="form-control" id="distance" required placeholder="distance" [(ngModel)]="distance" name="distance" />
+	</div>
+	<div>
+		<label for="temps"> Temps </label>
+		<input type="text" class="form-control" id="temps" required placeholder="temps" [(ngModel)]="temps" name="temps" />
+	</div>
+	<button class="form-control" type="submit"> Submit </button>
+
+
+</form>
+
+
+	<ul>
+  		<li *ngFor="let ville of listeVilles">{{ ville.nom }}</li>
+	</ul>
+
+	<router-outlet></router-outlet>

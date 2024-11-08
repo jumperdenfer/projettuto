@@ -1,0 +1,42 @@
+<form *ngIf="!isLoggedIn" (ngSubmit)="registerProposition()" #loginForm="ngForm">
+	
+	<div class="form-group">
+		<label for="départ"> Départ </label>
+		<input type="text" class="form-control" id="depart" required placeholder="départ" [(ngModel)]="depart" name="départ" />
+	</div>
+		<div class="form-group">
+		<label for="date"> date </label>
+		<input type="text" class="form-control" id="date" required placeholder="date" [(ngModel)]="date" name="date" />
+	</div>
+		<div class="form-group">
+		<label for="rdv"> rdv </label>
+		<input type="text" class="form-control" id="rdv" required placeholder="rdv" [(ngModel)]="rdv" name="rdv" />
+	</div>
+	<div>
+		<label for="arrivée"> Arrivée </label>
+		<input type="text" class="form-control" id="arrivee" required placeholder="arrivée" [(ngModel)]="arrivee" name="arrivée" />
+	</div>
+	<div>
+		<label for="depose"> Depose </label>
+		<input type="text" class="form-control" id="depose" required placeholder="depose" [(ngModel)]="depose" name="depose" />
+	</div>
+	<div>
+		<label for="temps"> Temps </label>
+		<input type="text" class="form-control" id="temps" required placeholder="temps" [(ngModel)]="temps" name="temps" />
+	</div>
+	<div>
+		<label for="voiture"> Voiture </label>
+		<input type="text" class="form-control" id="voiture" required placeholder="voiture" [(ngModel)]="voiture" name="voiture" />
+	</div>
+	<div>
+		<label for="places"> Places </label>
+		<input type="text" class="form-control" id="places" required placeholder="places" [(ngModel)]="places" name="places" />
+	</div>
+	<div>
+		<label for="prix"> Prix </label>
+		<input type="text" class="form-control" id="prix" required placeholder="prix" [(ngModel)]="prix" name="prix" />
+	</div>
+	<button class="form-control" type="submit"> Submit </button>
+
+
+</form>

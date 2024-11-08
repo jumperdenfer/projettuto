@@ -1,0 +1,12 @@
+
+<table>
+  <td><button routerLink="/home" > Home</button></td>
+  <td><button routerLink="/register" > Register</button></td>
+  <td><button routerLink="/propose" > Proposer un trajet</button></td>
+  <td><button routerLink="/trajets" > Trajets </button></td>
+  <td><button [routerLink]="['admin', 'userList']" > Administrator</button></td>
+</table>
+
+<h1>Bienvenue sur Cocovoit !</h1>
+
+<router-outlet></router-outlet>
